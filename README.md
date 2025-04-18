@@ -24,7 +24,8 @@ This project leverages multiple machine learning models to predict the likelihoo
 
 ## 📊 Dataset
 
-- **Source:** [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
+- **Source:** [UCI Heart Disease Dataset]
+- **Note:** The dataset is already included in this repository as `heart.csv`
 - **Attributes Include:**
   - Age, Sex, Chest Pain Type, Resting Blood Pressure, Cholesterol, Max Heart Rate, etc.
   - **Target variable:** Presence (`1`) or Absence (`0`) of heart disease
@@ -47,6 +48,7 @@ This project leverages multiple machine learning models to predict the likelihoo
 
 | File | Purpose |
 |------|---------|
+| `heart.csv` | Dataset used for training and prediction |
 | `Heart Disease Model Evaluation.ipynb` | Colab/Jupyter Notebook for training, evaluating and comparing ML models to find the most effective one (KNN performs best) |
 | `heart_app.py` | Streamlit web application for real-time user input and prediction |
 | `evaluate_model_using_sample_input.py` | Command-line interface to test predictions directly in the terminal using predefined or manual input |
