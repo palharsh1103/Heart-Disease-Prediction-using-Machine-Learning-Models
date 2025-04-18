@@ -1,13 +1,13 @@
 # 🫀 Heart Disease Prediction using Machine Learning
 
-This project uses various machine learning models to predict the presence of heart disease in patients based on clinical and demographic data. It is designed to assist in early detection and improve diagnosis accuracy.
+This project leverages multiple machine learning models to predict the likelihood of heart disease in individuals using clinical and demographic data. The aim is to support early diagnosis and improve the accuracy of predictions using well-tuned ML techniques and user-friendly deployment.
 
 ---
 
 ## 📌 Features
 
-- Cleaned and preprocessed dataset
-- Multiple ML models including:
+- Data cleaning and preprocessing
+- Multiple machine learning algorithms:
   - Logistic Regression
   - Decision Tree
   - Random Forest
@@ -15,18 +15,19 @@ This project uses various machine learning models to predict the presence of hea
   - Support Vector Machine (SVM)
   - XGBoost
   - Neural Network (MLPClassifier)
-- Evaluation using Accuracy, Precision, Recall, and F1-Score
-- Learning curve plots and comparison charts
-- Interactive Web Application using **Streamlit**
-- Gender & category mapping (e.g., Sex: 0 ➝ Female, 1 ➝ Male)
+- Performance metrics: Accuracy, Precision, Recall, F1-Score
+- Visual analysis with graphs and comparison charts
+- User-friendly Streamlit app for predictions
+- Human-readable label mappings (e.g., `Sex: Male/Female` instead of `0/1`)
 
 ---
 
 ## 📊 Dataset
 
-- **Source:** [UCI Heart Disease Dataset]
-  - Age, Sex, Chest Pain Type, Resting BP, Cholesterol, Fasting Blood Sugar, ECG, Max Heart Rate, Exercise Angina, etc.
-  - **Target variable:** `1` for presence and `0` for absence of heart disease
+- **Source:** [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
+- **Attributes Include:**
+  - Age, Sex, Chest Pain Type, Resting Blood Pressure, Cholesterol, Max Heart Rate, etc.
+  - **Target variable:** Presence (`1`) or Absence (`0`) of heart disease
 
 ---
 
@@ -37,13 +38,24 @@ This project uses various machine learning models to predict the presence of hea
 - Scikit-learn
 - XGBoost
 - Streamlit
-- VS Code / Jupyter Notebook
+- Jupyter Notebook / Google Colab
+- VS Code
 
 ---
 
-## 🚀 How to Run (Locally)
+## 🧪 Project Files
 
-1. **Clone the Repository**
+| File | Purpose |
+|------|---------|
+| `Heart Disease Model Evaluation.ipynb` | Colab/Jupyter Notebook for training, evaluating and comparing ML models to find the most effective one (KNN performs best) |
+| `heart_app.py` | Streamlit web application for real-time user input and prediction |
+| `evaluate_model_using_sample_input.py` | Command-line interface to test predictions directly in the terminal using predefined or manual input |
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/palharsh1103/Heart-Disease-Prediction-using-Machine-Learning-Models.git
